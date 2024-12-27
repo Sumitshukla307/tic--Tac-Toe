@@ -79,6 +79,8 @@ const checkDraw = () => {
         msg.innerHTML = "It's a draw!";
         msgContainer.classList.remove("hide");
         disableBoxes();
+        // Reset game after a short delay
+        setTimeout(resetGame, 2000); // 2-second delay
     }
 };
 
